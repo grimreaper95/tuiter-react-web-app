@@ -54,15 +54,15 @@ a {
     margin-bottom: 12px;
 }
 
-.wd-tuit-img-description {
-    margin-top: 0;
-    width: 504px;
-    border-width:1px;
-    border-style:solid;
-    border-radius: 0 0 10px 10px;
-    border-color:rgb(110, 118, 125);
-    border-top-style: none;
-}
+/*.wd-tuit-img-description {*/
+/*    margin-top: 0;*/
+/*    width: 504px;*/
+/*    border-width:1px;*/
+/*    border-style:solid;*/
+/*    border-radius: 0 0 10px 10px;*/
+/*    border-color:rgb(110, 118, 125);*/
+/*    border-top-style: none;*/
+/*}*/
 
 .wd-tuit-img {
     margin-bottom: 0;

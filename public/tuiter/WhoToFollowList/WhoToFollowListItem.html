@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet"/>
+    <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="whoToFollowListItem-sidebar"></div>
+<script src="../../vendors/jquery/jquery-3.6.1.min.js"></script>
+<script src="WhoToFollowListItem.js" type="module"></script>
+<script type="module">
+    import WhoToFollowListItem from "./WhoToFollowListItem.js";
+    import whos from "./whos.js";
+    $('#whoToFollowListItem-sidebar').append(
+        whos.map(who => {
+            return WhoToFollowListItem(who)
+        }).join('')
+    );
+
+</script>
+
+</body>
+</html>
