@@ -15,7 +15,7 @@ const NavigationSidebar = () => {
                 Home
             </Link>
             <Link to="explore" className={`list-group-item
-                    ${active === 'explore' || active === '' ?'active':''}`}>
+                    ${active === 'explore' || active === undefined ?'active':''}`}>
                 Explore
             </Link>
             <Link to="/" className="list-group-item">
