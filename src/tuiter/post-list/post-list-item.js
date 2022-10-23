@@ -16,7 +16,7 @@ const PostListItem = (
           "postContent": "Amazing show about <\a class=\"text-primary\" href=\"#\">@Inspiration4</a> mission!",
           "shareImage": "../images/inspiration4.jpeg",
           "shareTitle": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
-          "shareContent": "From training to launch to landing, this all access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
+          "shareContent": "From training to launch to landing, this all access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space",
           "shareLink": "netflix.com"
         }
     }
@@ -35,8 +35,8 @@ const PostListItem = (
                 <div className="wd-tuit-img-body">
                     <img className="wd-tuit-img" width="100%" height="100%" src={post.shareImage}/>
                     {/*<div className="wd-tuit-img-description">*/}
-                    {/*    <div className="wd-tuit-img-title">{post.shareTitle}</div>*/}
-                    {/*    <div className="wd-tuit-img-text">{post.shareContent}</div>*/}
+                        <div className="wd-tuit-img-title">{post.shareTitle}</div>
+                        <div className="wd-tuit-img-text">{post.shareContent}</div>
                     {/*</div>*/}
                 </div>
             </div>
