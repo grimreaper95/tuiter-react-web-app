@@ -11,7 +11,7 @@ export default [
         shareImage: '../images/inspiration4.jpeg',
         shareTitle: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
         shareContent: 'From training to launch to landing, this all access docuseries rides along with the Inspiration4 ' +
-            'crew on the first all-civilian orbital space ...',
+            'crew on the first all-civilian orbital space',
         shareLink: 'netflix.com'
     },
 
