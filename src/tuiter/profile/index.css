@@ -1,0 +1,23 @@
+.profile-img {
+    position: relative;
+    z-index: 1;
+    top: -20px;
+    right: -22px;
+}
+
+.btn-edit {
+
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px 0 0 0;
+    padding: 2px;
+}
+
+.wd-user-bar {
+    margin-left: -46px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+

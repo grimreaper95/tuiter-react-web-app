@@ -1,0 +1,10 @@
+.inputfield {
+    line-height: 2em;
+}
+
+.inline {
+    display:flex;
+}
+.edit-btn {
+    margin-top: -1px;
+}

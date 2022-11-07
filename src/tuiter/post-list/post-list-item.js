@@ -60,8 +60,6 @@ const PostListItem = (
                     <li>
                         <a className="wd-reaction-tab wd-reaction-tab-unselected text-decoration-none" href="#">
                             <FontAwesomeIcon icon={faUpload} />
-
-
                         </a>
                     </li>
                 </ul>

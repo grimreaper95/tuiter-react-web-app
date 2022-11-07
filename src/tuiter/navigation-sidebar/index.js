@@ -6,16 +6,16 @@ const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
     const active = paths[2];
-
+    // console.log('active is: ' + active);
     return (
         <div className="list-group">
             <a className="list-group-item">Tuiter</a>
             <Link to="home" className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+                    ${active === 'home' || active === '' || active === undefined ?'active':''}`}>
                 Home
             </Link>
             <Link to="explore" className={`list-group-item
-                    ${active === 'explore' || active === undefined ?'active':''}`}>
+                    ${active === 'explore' ?'active':''}`}>
                 Explore
             </Link>
             <Link to="/" className="list-group-item">
@@ -37,8 +37,8 @@ const NavigationSidebar = () => {
                     ${active === 'lists'?'active':''}`}>
                 Lists
             </Link>
-            <Link to="../profile" className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
+            <Link to="profile" className={`list-group-item
+                    ${active === 'profile' || active === 'edit-profile' ?'active':''}`}>
                 Profile
             </Link>
             <Link to="../more" className={`list-group-item
