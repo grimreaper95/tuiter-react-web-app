@@ -43,7 +43,7 @@ const PostListItem = (
             <div id="reaction-container " className="mt-3">
                 <ul className="wd-reaction-bar justify-content-between ">
                     <li className="ms-5">
-                        <a className="wd-reaction-tab wd-reaction-tab-unselected text-decoration-none" href="for_you.html">
+                        <a className="wd-reaction-tab wd-reaction-tab-unselected text-decoration-none" href="#">
                             <FontAwesomeIcon icon={faComment}></FontAwesomeIcon> {post.commentCount}
                         </a>
                     </li>

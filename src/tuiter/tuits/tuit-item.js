@@ -1,5 +1,6 @@
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer";
+//import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHeart, faComment, faRetweet, faUpload, faCheckCircle} from '@fortawesome/free-solid-svg-icons';
 
@@ -17,7 +18,9 @@ const TuitItem = (
     const dispatch = useDispatch();
 
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+//        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
+
     }
 
     return (

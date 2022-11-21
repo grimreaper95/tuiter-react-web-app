@@ -16,7 +16,7 @@
     import WhoToFollowListItem from "./WhoToFollowListItem.js";
     import whos from "./whos.js";
     $('#whoToFollowListItem-sidebar').append(
-        whos.map(who => {
+        whos?.map(who => {
             return WhoToFollowListItem(who)
         }).join('')
     );
