@@ -1,9 +1,9 @@
 import axios from 'axios';
 const API_BASE = 'http://localhost:4000/api';
 // console.log(API_BASE + ":: shashank")
-const TUITS_API = `${API_BASE}/tuits`;
+// const TUITS_API = `${API_BASE}/tuits`;
 
-// const TUITS_API = 'https://tuiter-node-server-app-ss.herokuapp.com/api/tuits'
+const TUITS_API = 'https://tuiter-node-server-app-ss.herokuapp.com/api/tuits'
 
 export const createTuit = async (tuit) => {
     console.log(tuit)
