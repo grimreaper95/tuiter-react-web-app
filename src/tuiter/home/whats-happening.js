@@ -16,13 +16,14 @@ const WhatsHappening = () => {
             "time": "1m",
             "title": "This is the demo title of a post",
             "tuitContent": whatsHappening,
-            "_id": (new Date()).getTime()+'',
+            "key_id": (new Date()).getTime()+'',
             "likes": 0,
             "dislikes": 0,
             "liked": false,
             "image": "../images/spacex-logo.jpeg"
         }
         dispatch(createTuitThunk(newTuit));
+        setWhatsHappening("");
     }
     return (
         <div className="row">

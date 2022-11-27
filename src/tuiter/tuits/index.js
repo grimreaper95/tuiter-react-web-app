@@ -15,6 +15,7 @@ const TuitsList = () => {
     useEffect(() => {
         dispatch(findTuitsThunk())
     }, [])
+
     return(
         <ul className="list-group ">
             {
@@ -24,13 +25,15 @@ const TuitsList = () => {
             </li>
             }
             {
-                tuits?.map(tuit =>
-                    <div className ="list-group-item">
+                tuits?.slice(0).reverse().map(tuit =>
+                    <div className ="list-group-item"
+                         key={(tuit.key_id)?tuit.key_id : tuit._id} tuit={tuit}>
                     <TuitItem
-                        key={tuit._id} tuit={tuit}/>
+                        tuit={tuit}/>
                     <TuitStat
-                        key={tuit._id + 1} tuit={tuit}/>
+                        tuit={tuit}/>
                     </div>
+
                 )
             }
         </ul>

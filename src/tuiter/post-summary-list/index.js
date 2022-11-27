@@ -20,9 +20,9 @@ const PostSummaryList = () => {
                 </li>
             }
             {
-                tuits?.map(post =>
+                tuits?.slice(0).reverse()?.map(post =>
                     <PostSummaryItem
-                        key={post._id} post={post}/> )
+                        key={(post.key_id)?post.key_id : post._id} post={post}/> )
             }
         </ul>
     );
