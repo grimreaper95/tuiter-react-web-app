@@ -10,6 +10,7 @@ const WhatsHappening = () => {
 
     const tuitClickHandler = () => {
         const newTuit = {
+            "_id":  (new Date()).getTime()+'',
             "handle": "@demo",
             "userName": "Demo",
             "topic": "Demo",
